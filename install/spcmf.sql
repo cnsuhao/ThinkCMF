@@ -295,9 +295,6 @@ CREATE TABLE `sp_comments` (
   KEY `comment_approved_date_gmt` (`comment_approved`),
   KEY `comment_parent` (`comment_parent`)
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=4 ;
-INSERT INTO `sp_comments` VALUES (1, 1, 'WordPress 先生', '', 'http://wordpress.org/', '', '2013-03-18 16:09:34', '您好，这是一条评论。\n要删除评论，请先登录，然后再查看这篇文章的评论。登录后您可以看到编辑或者删除评论的选项。', 0, '1', '', '', 0, 0);
-INSERT INTO `sp_comments` VALUES (2, 4, 'admin', 'zxxjjforever@163.com', '', '127.0.0.1', '2013-03-19 00:56:38', 'wq dad', 0, '1', 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.57 Safari/537.17', '', 0, 1);
-INSERT INTO `sp_comments` VALUES (3, 4, 'admin', 'zxxjjforever@163.com', '', '127.0.0.1', '2013-03-19 01:19:46', 'sss', 0, '1', 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.57 Safari/537.17', '', 0, 1);
 CREATE TABLE `sp_links` (
   `link_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `link_url` varchar(255) NOT NULL DEFAULT '',
@@ -312,7 +309,7 @@ CREATE TABLE `sp_links` (
   PRIMARY KEY (`link_id`),
   KEY `link_visible` (`link_status`)
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
-INSERT INTO `sp_links` VALUES (1, 'http://www.simplewind.net', '简约·风网络技术工作室', '', '_blank', '', 1, 0, '', 0);
+INSERT INTO `sp_links` VALUES (1, 'http://www.thinkcmf.com', 'ThinkCMF', '', '_blank', '', 1, 0, '', 0);
 CREATE TABLE `sp_members` (
   `ID` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `user_login_name` varchar(25) NOT NULL,
