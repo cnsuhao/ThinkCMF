@@ -5,6 +5,10 @@
     <ul class="cc">
       <li class="current"><a href="{:U('menu/index')}">后台菜单</a></li>
       <li><a href="{:U('menu/add')}">添加菜单</a></li>
+      <if condition="APP_DEBUG">
+      	<li><a href="{:U('menu/dev_import_menu')}">同步菜单</a></li>
+      	<li><a href="{:U('menu/export_menu')}">导出菜单</a></li>
+      </if>
     </ul>
    </div>
   <form class="J_ajaxForm" action="{:U('Menu/listorders')}" method="post">
